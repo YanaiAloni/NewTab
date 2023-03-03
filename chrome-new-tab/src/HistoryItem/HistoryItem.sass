@@ -1,0 +1,68 @@
+$primary:black
+$secondary: #093170
+
+.historyItem
+    border-top: solid $primary
+    background:$secondary
+    color: $primary
+    animation: close .3s ease-in-out
+    
+   
+    
+
+.historyItem:hover
+    background: darken($secondary,25)
+    color: lighten($primary,25)
+    animation: open .3s ease-in-out
+    
+
+
+@keyframes open
+    100%
+        background: linear-gradient(180deg,$primary,$primary,$primary,$primary,$primary,$primary,$primary,$primary,$primary,$primary)
+    90%
+        background: linear-gradient(180deg,$primary,$primary,$primary,$primary,$primary,$primary,$primary,$primary,$primary,$secondary)
+    80%
+        background: linear-gradient(180deg,$primary,$primary,$primary,$primary,$primary,$primary,$primary,$primary,$secondary,$secondary)
+    70%
+        background: linear-gradient(180deg,$primary,$primary,$primary,$primary,$primary,$primary,$primary,$secondary,$secondary,$secondary)
+    60%
+        background: linear-gradient(180deg,$primary,$primary,$primary,$primary,$primary,$primary,$secondary,$secondary,$secondary,$secondary)
+    50%
+        background: linear-gradient(180deg,$primary,$primary,$primary,$primary,$primary,$secondary,$secondary,$secondary,$secondary,$secondary)
+    40%
+        background: linear-gradient(180deg,$primary,$primary,$primary,$primary,$secondary,$secondary,$secondary,$secondary,$secondary,$secondary)
+    30%
+        background: linear-gradient(180deg,$primary,$primary,$primary,$secondary,$secondary,$secondary,$secondary,$secondary,$secondary,$secondary)
+    20%
+        background: linear-gradient(180deg,$primary,$primary,$secondary,$secondary,$secondary,$secondary,$secondary,$secondary,$secondary,$secondary)
+    10%
+        background: linear-gradient(180deg,$primary,$secondary,$secondary,$secondary,$secondary,$secondary,$secondary,$secondary,$secondary,$secondary)
+    0%
+        background: linear-gradient(180deg,$secondary,$secondary,$secondary,$secondary,$secondary,$secondary,$secondary,$secondary,$secondary,$secondary)
+    
+@keyframes close
+    0%
+        background: linear-gradient(180deg,$primary,$primary,$primary,$primary,$primary,$primary,$primary,$primary,$primary,$primary)
+    10%
+        background: linear-gradient(180deg,$primary,$primary,$primary,$primary,$primary,$primary,$primary,$primary,$primary,$secondary)
+    20%
+        background: linear-gradient(180deg,$primary,$primary,$primary,$primary,$primary,$primary,$primary,$primary,$secondary,$secondary)
+    30%
+        background: linear-gradient(180deg,$primary,$primary,$primary,$primary,$primary,$primary,$primary,$secondary,$secondary,$secondary)
+    40%
+        background: linear-gradient(180deg,$primary,$primary,$primary,$primary,$primary,$primary,$secondary,$secondary,$secondary,$secondary)
+    50%
+        background: linear-gradient(180deg,$primary,$primary,$primary,$primary,$primary,$secondary,$secondary,$secondary,$secondary,$secondary)
+    60%
+        background: linear-gradient(180deg,$primary,$primary,$primary,$primary,$secondary,$secondary,$secondary,$secondary,$secondary,$secondary)
+    70%
+        background: linear-gradient(180deg,$primary,$primary,$primary,$secondary,$secondary,$secondary,$secondary,$secondary,$secondary,$secondary)
+    80%
+        background: linear-gradient(180deg,$primary,$primary,$secondary,$secondary,$secondary,$secondary,$secondary,$secondary,$secondary,$secondary)
+    90%
+        background: linear-gradient(180deg,$primary,$secondary,$secondary,$secondary,$secondary,$secondary,$secondary,$secondary,$secondary,$secondary)
+    100%
+        background: linear-gradient(180deg,$secondary,$secondary,$secondary,$secondary,$secondary,$secondary,$secondary,$secondary,$secondary,$secondary)
+    
+
