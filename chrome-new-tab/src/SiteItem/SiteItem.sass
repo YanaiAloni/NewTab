@@ -1,42 +1,23 @@
 $primary:black
 $secondary: #093170
 
-.shortcut
+.historyItem
     border-top: solid $primary
     background:$secondary
     color: $primary
     animation: close .3s ease-in-out
     display: grid
-    grid-auto-columns: auto auto auto
-    
-    .keys
-        justify-self: center
-        margin: 0
-        width: fit-content
-        grid-row-start: 1
-        grid-column-start: 2
-        grid-column-end: 3
 
-    .name
-        width: fit-content
-        margin: 0em
-        grid-row-start: 1
-        grid-column-start: 1
-        grid-column-end: 2
-        display: grid
-    .icon
+    .amount
         justify-self: end
-        height: 0.2em
-        width: fit-content
-        margin: 0em
         grid-row-start: 1
-        grid-column-start: 3
-        grid-column-end: 3
-        color: $primary
-        
+    .site
+        grid-row-start: 1
+    
+   
+    
 
-
-.shortcut:hover
+.historyItem:hover
     background: darken($secondary,25)
     color: lighten($primary,25)
     animation: open .3s ease-in-out
