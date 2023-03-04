@@ -14,7 +14,7 @@ export const Latest:React.FC<{latest:ILatest, className?:string}> = (props) => {
     })
     
     return (
-    <Card style={{backgroundColor: "black", width:"30%" ,height:"30%", color:"#093170"}}>
+    <Card style={{backgroundColor: "black", width:"30%" ,height:"30%", color:"#093170"}} className="history">
         <h1>Last {props.latest.amount} searches</h1>
         {history?.map((item:chrome.history.HistoryItem,index:number)=><HistoryItem item={item} key={index}/>)}
     </Card>
